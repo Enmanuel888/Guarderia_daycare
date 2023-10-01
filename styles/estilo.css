@@ -121,8 +121,19 @@ body, ul, li, p, a, label, input, div {
   .services-icon-wap:hover, .services-icon-wap:hover i {color: #fff;}
   .services-icon-wap:hover {background: #69bb7e;}
   /* Contact map */
+  #nombrein:hover{
+    background-color:#59ab6e ;
+  }
+  #Correo:hover{
+    background-color:#f35ac5 ;}
+    #numero:hover{
+      background-color: #fa0f0f;
+    }
+  #mensaje:hover{
+    background-color: #4aabd6;
+  }
   .leaflet-control a, .leaflet-control { font-size: 10px !important;}
-  .form-control { border: 1px solid #e8e8e8;}
+  .form-control { border: 1px solid #b0c7f7;}
   /* Footer */
   #footer a { color: #000000;}
   #footer a:hover { color: #68bb7d;}
