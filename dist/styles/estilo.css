@@ -60,7 +60,9 @@ body, ul, li, p, a, label, input, div {
   .menu-link4:hover{
     color: #fa0f0f;
   }
-  
+  .menu-link5:hover{
+    color: #ede861;
+  }
   /* Hero Carousel */
   #slider { background: #efefef !important;}
   /* Accordion */
