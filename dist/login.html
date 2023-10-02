@@ -2,33 +2,42 @@
 <html>
 <head>
 	<link rel="shortcut icon" type="png" href="Imagenes/favicon_io (3)/favicon.ico">
-	<title>Inicio de session </title>
+	<title>inicio de session de Pasitos Daycare </title>
 	<link rel="stylesheet" type="text/css" href="styles/loginStyle.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
-<body>
+<body style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url('Imagenes/juegos.jpg');">
 		<div class="form-box">
 			<div class="button-box">
 				<div id="btn"></div>
 				<button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">inicio </button>
-				<button type="button" class="toggle-btn" id="reg" onclick="ServiceWorkerRegistration()">Registro</button>
+				<button type="button" class="toggle-btn" id="reg" onclick="register()">Registro</button>
 			</div>
 			<div class="social-icons">
-				<img src="Imagenes/fb2.png">
-				<img src="Imagenes/insta2.png">
-				<img src="Imagenes/tt2.png">
+
+				<a href="https://www.facebook.com/pasitosdaycare010213/about" target="_blank">
+					<i class="bi bi-facebook" id="media"></i>
+				</a>
+
+				<a href="https://www.instagram.com/pasitosdaycarerd/#" target="_blank">
+					<i class="bi bi-instagram fa-sm fa-fw me-2" id="media"></i></a>
+
+				<a href="https://twitter.com/DaycarePasitos" target="_blank">
+					<i class="bi bi-twitter fa-sm fa-fw me-2" id="media"></i>
+				</a>
+			
 			</div>
 			
 			<!-- Login Form -->
 			<form id="login" class="input-group" action="index.html">
 				<div class="inp">
-					<img src="imagen/user.png"><input type="text" id="email" class="input-field" placeholder="Nombre de usuario" style="width: 88%; border:none;" required="required">
+					<i class="bi bi-person-circle" style="font-size: 1rem; margin-right: 10px;"></i><input type="email" id="email" class="input-field" placeholder="Correo Electrónico" style="width: 88%; border:none;" required="required">
 				</div>
 				<div class="inp">
-					<img src="images/icon/Password.png"><input type="Password" id="Password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required="required">
+					<i class="bi bi-braces-asterisk" style="font-size: 1rem; margin-right: 10px;"></i><input type="Password" id="Password" class="input-field" placeholder="Contraseña" style="width: 88%; border: none;" required="required">
 				</div>
-				<input type="checkbox" class="check-box">Recordar Password 
+				<input type="checkbox" class="check-box">Recordar Contraseña 
 				<button type="submit" class="submit-btn">inicio de session </button>
 			</form>
 
@@ -38,20 +47,20 @@
 					<h3>or</h3>
 				</div>
 				<button class="connect" onclick="google()">
-					<img src="imagen/google.png"><span>inicio de seccion de google</span>
+					<i class="bi bi-google"></i><span>inicio de seccion de google</span>
 				</button>
 			</div>
 			
 			<!-- Registration Form -->
 			<form id="register" class="input-group">
-				<input type="text" class="input-field" placeholder="Full Name" required="required">
-				<input type="email" class="input-field" placeholder="Email Address" required="required">
-				<input type="Password" class="input-field" placeholder="Create Password" name="psame" required="required">
-				<input type="Password" class="input-field" placeholder="Confirm Password" name="psame" required="required">
+				<input type="text" class="input-field" placeholder="Nombre completo" required="required">
+				<input type="email" class="input-field" placeholder="Correo Electrónico" required="required">
+				<input type="Password" class="input-field" placeholder="Contraseña" name="psame" required="required">
+				<input type="Password" class="input-field" placeholder="Repetir Contraseña" name="psame" required="required">
 				<input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()">Acepto los Términos y Condiciones
-				
+				<button type="submit" class="submit-btn">Registrarte </button>
 			</form>
 		</div>
-		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
