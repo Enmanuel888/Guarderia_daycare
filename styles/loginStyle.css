@@ -5,7 +5,7 @@
 }
 
 body {
-	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url("Imagenes/f");
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url("Imagenes/fondologin.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	display: flex;
